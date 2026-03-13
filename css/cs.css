@@ -1,0 +1,130 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.section {
+    grid-column: span 1;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center; 
+}
+
+.group {
+    grid-column: span 2;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.image-container,
+.text-container {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.image-container {
+    margin-right: 20px; 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 0; 
+    margin-bottom: 10px; 
+    word-wrap: break-word; 
+    max-width: 100%; 
+    overflow-wrap: break-word; 
+    text-align: justify; 
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 36px; 
+    text-align: center; 
+    margin-bottom: 10px; 
+}
+.contact {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.contact input[type="text"],
+.contact textarea {
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.notification {
+        color: green;
+        font-size: 16px;
+        margin-top: 10px;
+        display: none;
+    }
+
+.column-1 {
+    background-color: rgba(128, 128, 128, 0.5); 
+}
+
+.column-2 {
+    background-color: rgba(128, 128, 128, 0.8); 
+}
+
+.column-3 {
+    background-color: rgba(128, 128, 128, 1); 
+}
